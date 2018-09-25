@@ -91,9 +91,20 @@
   !*** ./lib/asteroids.js ***!
   \**************************/
 /*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("const MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./lib/moving_object.js\");\nwindow.MovingObject = MovingObject;\n\n\n// const mo = new MovingObject(\n//   { pos: [30, 30], vel: [10, 10], radius: 5, color: \"#00FF00\"}\n// );\n\n//# sourceURL=webpack:///./lib/asteroids.js?");
+
+/***/ }),
+
+/***/ "./lib/moving_object.js":
+/*!******************************!*\
+  !*** ./lib/moving_object.js ***!
+  \******************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./lib/asteroids.js?");
+eval("function MovingObject(pos, vel, radius, color) {\n  this.pos = pos;\n  this.vel = vel;\n  this.radius = radius;\n  this.color = color;\n  \n}\n\nMovingObject.prototype.draw = function (ctx) {\n   ctx.fillStyle = this.color;\n   ctx.fill();\n};\n\nmodule.exports = MovingObject;\n\n\n//# sourceURL=webpack:///./lib/moving_object.js?");
 
 /***/ })
 
